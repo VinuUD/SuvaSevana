@@ -1,0 +1,72 @@
+cleaner :
+	empID -> employee.empID
+
+nurse : 
+	empID -> employee.empID
+
+sellDrug :
+	drugCode -> drug.drugCode
+	vendorRegNum -> vendor.regNum
+
+bed :
+	wardID -> ward.wardID
+
+outPatient :
+	patientID -> patient.patientID 
+
+treatment:
+	patientID -> patient.patientID
+
+
+PCU : 
+	inChargeID -> employee.empID
+
+insSubDetails :
+	patientID -> patient.patientID
+
+medicalStaff :
+	empID -> employee.empID
+
+inPatient :
+	patientID -> patient.patientID
+	wardID -> ward.wardID
+	bedID -> bed.bedID 
+	primaryDocID -> doctor.empID
+
+diagnosticUnit :
+	pcuID -> pcu.id
+
+attendant : 
+	empID -> employee.empID
+
+doctor :
+	empID -> employee.empID
+
+ward :
+	pcuID -> pcu.id
+
+worksIn :
+	empID -> employee.empID
+	pcuID -> pcu.id
+
+record :
+	patientID -> patient.patientID
+	nurseID -> employee.empID
+
+emgContact :
+	patientID -> patient.patientID
+
+
+
+
+
+
+
+
+	
+	
+	
+
+
+
+
